@@ -1,0 +1,246 @@
+.gallery-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  color: #c00;
+  margin-bottom: 30px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.video-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-info {
+  padding: 15px;
+}
+
+.video-info h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.video-info p {
+  margin: 0 0 10px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.watch-link {
+  color: #c00;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.watch-link:hover {
+  text-decoration: underline;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Roboto', 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; }
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.youtube-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #c00;
+  margin: 0;
+}
+
+.header p {
+  color: #606060;
+  font-size: 1.1rem;
+}
+
+.main-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.section-card {
+  padding: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.section-card:last-child { border-bottom: none; }
+
+.section-card h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  background: #fafafa;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.drop-zone.active {
+  border-color: #c00;
+  background: #fff5f5;
+}
+
+.drop-zone p {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+.browse-link {
+  color: #c00;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.file-name {
+  margin-top: 15px;
+  color: #c00;
+  font-size: 0.95rem;
+}
+
+.input-group {
+  margin: 20px 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.required { color: #c00; }
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-group textarea { resize: vertical; }
+
+.btn-google, .btn-upload, .btn-outline {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.btn-google {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-google:hover { background: #f8f9fa; }
+
+.btn-upload {
+  background: #c00;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.btn-upload:hover { background: #a00; }
+
+.btn-upload:disabled { background: #ccc; cursor: not-allowed; }
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #c00;
+  color: #c00;
+}
+
+.btn-outline:hover { background: #fff5f5; }
+
+.alert {
+  margin: 20px 30px;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-line;
+}
+
+.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+footer {
+  margin-top: 40px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .main-card { margin: 0 10px; }
+  .section-card { padding: 20px; }
+} 

@@ -1,0 +1,79 @@
+.log-management-container {
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-top: 24px;
+}
+
+.log-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.log-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #003b49;
+}
+
+.log-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.log-card {
+  background: #f9fafb;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #003b49;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.log-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.log-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.log-count {
+  font-size: 22px;
+  font-weight: bold;
+  color: #003b49;
+}
+
+.log-desc {
+  font-size: 13px;
+  color: #666;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.view-btn {
+  background: #003b49;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.view-btn:hover {
+  background: #015c63;
+}
+
+.log-card.error {
+  border-left: 4px solid #b00020;
+  background: #fff6f6;
+}
